@@ -21,5 +21,6 @@ describe("my test suite", () => {
   });
   it("fizzbuzz returns 3", () => {
     expect(fizzbuzz(3));
+    console.log(fizzbuzz(3));
   });
 });
