@@ -15,5 +15,15 @@ export function divide(g1, g2) {
 }
 
 export function fizzbuzz(f) {
-  return f;
+  if (f % 3) {
+    return "fizz";
+  }
+  if (f % 5) {
+    return "buzz";
+  }
+  if ((f % 3, 5)) {
+    return "fizzbuzz";
+  } else {
+    return f;
+  }
 }

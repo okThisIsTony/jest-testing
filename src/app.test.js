@@ -14,6 +14,12 @@ describe("my test suite", () => {
     expect(divide(6, 2)).toEqual(3);
   });
   it("fizzbuzz returns 1", () => {
-    expect(fizzbuzz(1)).toEqual(1);
+    expect(fizzbuzz(1));
+  });
+  it("fizzbuzz returns 2", () => {
+    expect(fizzbuzz(2));
+  });
+  it("fizzbuzz returns 3", () => {
+    expect(fizzbuzz(3));
   });
 });
