@@ -14,13 +14,22 @@ describe("my test suite", () => {
     expect(divide(6, 2)).toEqual(3);
   });
   it("fizzbuzz returns 1", () => {
-    expect(fizzbuzz(1));
+    expect(fizzbuzz(1)).toEqual(1);
   });
   it("fizzbuzz returns 2", () => {
-    expect(fizzbuzz(2));
+    expect(fizzbuzz(2)).toEqual(2);
   });
   it("fizzbuzz returns 3", () => {
-    expect(fizzbuzz(3));
+    expect(fizzbuzz(3)).toEqual("fizz");
     console.log(fizzbuzz(3));
+  });
+  it("fizzbuzz returns 4", () => {
+    expect(fizzbuzz(4)).toEqual(4);
+  });
+  it("fizzbuzz returns 5", () => {
+    expect(fizzbuzz(5)).toEqual("buzz");
+  });
+  it("fizzbuzz returns 15", () => {
+    expect(fizzbuzz(15)).toEqual("fizzbuzz");
   });
 });
