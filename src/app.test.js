@@ -1,4 +1,4 @@
-import { add, subtract, multiply, divide, fizzbuzz } from "./app";
+import { add, subtract, multiply, divide, fizzbuzz, fizzbuzzTo } from "./app";
 
 describe("my test suite", () => {
   it("adds 1 + 1", () => {
@@ -31,5 +31,14 @@ describe("my test suite", () => {
   });
   it("fizzbuzz returns 15", () => {
     expect(fizzbuzz(15)).toEqual("fizzbuzz");
+  });
+  it("for loop exercise", () => {
+    for (let i = 0; i <= 10; i++) {
+      console.log(i);
+    }
+  });
+  it("fizzbuzzTo", () => {
+    const result = fizzbuzzTo(1);
+    expect(result).toEqual([1]);
   });
 });
