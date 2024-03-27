@@ -32,13 +32,17 @@ describe("my test suite", () => {
   it("fizzbuzz returns 15", () => {
     expect(fizzbuzz(15)).toEqual("fizzbuzz");
   });
-  it("for loop exercise", () => {
+  xit("for loop exercise", () => {
     for (let i = 0; i <= 10; i++) {
       console.log(i);
     }
   });
-  it("fizzbuzzTo", () => {
+  it("fizzbuzzTo returns list 1", () => {
     const result = fizzbuzzTo(1);
     expect(result).toEqual([1]);
+  });
+  it("fizzbuzzTo returns list 2", () => {
+    const result = fizzbuzzTo(2);
+    expect(result).toEqual([1, 2]);
   });
 });
