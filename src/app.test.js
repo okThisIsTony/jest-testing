@@ -45,4 +45,8 @@ describe("my test suite", () => {
     const result = fizzbuzzTo(2);
     expect(result).toEqual([1, 2]);
   });
+  it("fizzbuzzTo returns list 3", () => {
+    const result = fizzbuzzTo(3);
+    expect(result).toEqual([1, 2, "fizz"]);
+  });
 });
