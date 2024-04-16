@@ -29,20 +29,11 @@ export function fizzbuzz(f) {
 }
 
 export function fizzbuzzTo(lastNumber) {
-  if (lastNumber % 15 === 0) {
-    return "fizzbuzz";
+  const list = [];
+  for (let i = 1; i <= lastNumber; i++) {
+    const result = fizzbuzz(i);
+    list.push(result);
   }
-  if (lastNumber % 3 === 0) {
-    return "fizz";
-  }
-  if (lastNumber % 5 === 0) {
-    return "buzz";
-  } else {
-    const list = [];
-    for (let i = 1; i <= lastNumber; i++) {
-      list.push(i);
-    }
-    console.log(list);
-    return list;
-  }
+  console.log(list);
+  return list;
 }
